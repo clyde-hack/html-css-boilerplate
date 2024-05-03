@@ -1,0 +1,32 @@
+@use 'sass:math';
+@use '../utils/' as *;
+
+// tables
+table {
+	width: 100%;
+	margin-block: $gutter;
+	border-top: 2px solid gainsboro;
+	border-bottom: 2px solid gainsboro;
+	background-color: white;
+	font-size: 0.875em;
+
+	th {
+		text-align: left;
+		text-transform: uppercase;
+		font-weight: 600;
+		padding-block: math.div($gutter-sm, 2);
+		padding-inline: $gutter-sm;
+	}
+
+	td {
+		padding: $gutter-sm;
+	}
+
+	tbody > tr {
+		border-top: 1px solid gainsboro;
+
+		&:nth-child(even) {
+			background-color: ghostwhite;
+		}
+	}
+}

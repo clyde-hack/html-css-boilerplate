@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Boilerplate</title>
+		<link rel="stylesheet" href="./css/styles.css" />
+		<script src="https://kit.fontawesome.com/0ac72a7378.js" crossorigin="anonymous"></script>
+	</head>
+	<body>
+		<header></header>
+
+		<main>
+			<section id="typography">
+				<h2>Typography</h2>
+
+				<h3>Headlines</h3>
+				<div id="headlineGrid">
+					<h1>Headline 1</h1>
+					<h2>Headline 2</h2>
+					<h3>Headline 3</h3>
+					<h4>Headline 4</h4>
+					<h5>Headline 5</h5>
+					<h6>Headline 6</h6>
+				</div>
+
+				<h3>Paragrapgh</h3>
+				<p>
+					Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima totam suscipit ipsa excepturi quod nam illo
+					ad deleniti impedit explicabo natus, ipsam ipsum modi molestiae exercitationem ab itaque magni iure expedita
+					voluptas?
+				</p>
+
+				<h3>Blockquote</h3>
+				<blockquote>
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae repellendus quo deserunt, accusamus quidem
+					asperiores?
+				</blockquote>
+
+				<h3>Quote</h3>
+				<q>Lorem ipsum dolor sit amet consectetur adipisicing elit.</q>
+
+				<h3>Lists</h3>
+				<div id="listGrid">
+					<dl>
+						<dt>Data Term 1</dt>
+						<dd>Data Definiton 1</dd>
+
+						<dt>Data Term 2</dt>
+						<dd>Data Definiton 2</dd>
+
+						<dt>Data Term 3</dt>
+						<dd>Data Definiton 3</dd>
+					</dl>
+
+					<ul>
+						<li>Unordered Item 1</li>
+						<li>Unordered Item 2</li>
+						<li>Unordered Item 3</li>
+					</ul>
+
+					<ol>
+						<li>Ordered Item 1</li>
+						<li>Ordered Item 2</li>
+						<li>Ordered Item 3</li>
+					</ol>
+
+					<menu>
+						<li>Menu Item 1</li>
+						<li>Menu Item 2</li>
+						<li>Menu Item 3</li>
+					</menu>
+				</div>
+
+				<h3>Code</h3>
+				<code>&lt;p&gt;This is some code&hellip;&lt;/p&gt;</code>
+			</section>
+
+			<section id="layout">
+				<h2>Layout</h2>
+
+				<h3>Scaffolding</h3>
+				<div id="scaffoldingGrid">
+					<article>
+						<h4>Full Column</h4>
+						<code>
+							<pre>
+&lt;body&gt;
+  &lt;header&gt;
+    Header Content...              
+  &lt;/header&gt;
+
+  &lt;main&gt;
+    Main Content...
+  &lt;/main&gt;
+
+  &lt;footer&gt;
+    Footer Content...
+  &lt;/footer&gt;
+&lt;/body&gt;</pre
+							>
+						</code>
+					</article>
+
+					<article>
+						<h4>2 Column - Left Sidebar</h4>
+						<code>
+							<pre>
+&lt;body class="leftCol"&gt;
+  &lt;header&gt;
+    Header Content...              
+  &lt;/header&gt;
+
+  &lt;main&gt;
+    Main Content...
+  &lt;/main&gt;
+
+  &lt;aside&gt;
+    Left Sidebar Content...
+  &lt;/aside&gt;
+
+  &lt;footer&gt;
+    Footer Content...
+  &lt;/footer&gt;
+&lt;/body&gt;</pre
+							>
+						</code>
+					</article>
+
+					<article>
+						<h4>2 Column - Right Sidebar</h4>
+						<code>
+							<pre>
+&lt;body class="rightCol"&gt;
+  &lt;header&gt;
+    Header Content...              
+  &lt;/header&gt;
+
+  &lt;main&gt;
+    Main Content...
+  &lt;/main&gt;
+
+  &lt;aside&gt;
+    Right Sidebar Content...
+  &lt;/aside&gt;
+
+  &lt;footer&gt;
+    Footer Content...
+  &lt;/footer&gt;
+&lt;/body&gt;</pre
+							>
+						</code>
+					</article>
+				</div>
+
+				<h3>Table</h3>
+				<table>
+					<thead>
+						<tr>
+							<th>Column 1</th>
+							<th>Column 2</th>
+							<th>Column 3</th>
+							<th>Column 4</th>
+							<th>Column 5</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Row 1, Column 1</td>
+							<td>Row 1, Column 2</td>
+							<td>Row 1, Column 3</td>
+							<td>Row 1, Column 4</td>
+							<td>Row 1, Column 5</td>
+						</tr>
+
+						<tr>
+							<td>Row 2, Column 1</td>
+							<td>Row 2, Column 2</td>
+							<td>Row 2, Column 3</td>
+							<td>Row 2, Column 4</td>
+							<td>Row 2, Column 5</td>
+						</tr>
+
+						<tr>
+							<td>Row 3, Column 1</td>
+							<td>Row 3, Column 2</td>
+							<td>Row 3, Column 3</td>
+							<td>Row 3, Column 4</td>
+							<td>Row 3, Column 5</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<h3>Form</h3>
+				<form>
+					<fieldset>
+						<legend>Fieldset</legend>
+
+						<div class="inputGroup">
+							<label>Text</label>
+							<input type="text" />
+						</div>
+
+						<div class="inputGroup">
+							<label>Email</label>
+							<input type="email" />
+						</div>
+
+						<div class="inputGroup">
+							<label>URL</label>
+							<input type="url" />
+						</div>
+
+						<div class="inputGroup">
+							<label>Date</label>
+							<input type="date" />
+						</div>
+
+						<div class="inputGroup">
+							<label>Number</label>
+							<input type="number" />
+						</div>
+
+						<div class="inputGroup">
+							<label>Password</label>
+							<input type="password" />
+						</div>
+
+						<div class="inputGroup">
+							<label>Checkbox</label>
+							<input type="checkbox" />
+						</div>
+
+						<div class="inputGroup">
+							<label>Radio</label>
+							<input type="radio" />
+						</div>
+
+						<div class="inputGroup">
+							<label>File Upload</label>
+							<input type="file" />
+						</div>
+
+						<div class="inputGroup">
+							<label>Textarea</label>
+							<textarea placeholder="Text goes here..."></textarea>
+						</div>
+
+						<div class="inputGroup">
+							<label>Select Menu</label>
+							<select>
+								<option value="">Select a value</option>
+								<option value="1">Option 1</option>
+								<option value="2">Option 2</option>
+								<option value="3">Option 3</option>
+							</select>
+						</div>
+					</fieldset>
+
+					<button type="submit">Submit</button>
+				</form>
+			</section>
+		</main>
+
+		<footer></footer>
+	</body>
+</html>

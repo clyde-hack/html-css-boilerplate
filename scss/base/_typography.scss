@@ -1,0 +1,115 @@
+@use '../utils/' as *;
+
+// typography
+html {
+	font-size: 75%;
+
+	@media (min-width: 768px) {
+		font-size: 87.5%;
+	}
+
+	@media (min-width: 992px) {
+		font-size: 100%;
+	}
+}
+
+body {
+	font-family: 'Poppins', sans-serif;
+	font-size: 1em;
+	line-height: 1.5em;
+	color: #404040;
+}
+
+@each $h, $size in $headlines {
+	#{$h} {
+		font-family: 'Playfair Display';
+		font-size: $size;
+		font-weight: 500;
+		line-height: 1em;
+		margin-top: calc(#{$baseline} * 2 - 1em);
+		margin-bottom: $baseline;
+	}
+}
+
+p,
+blockquote,
+code,
+ul,
+ol,
+dl,
+menu {
+	margin-block: $baseline;
+}
+
+p,
+blockquote {
+	max-width: 50em;
+}
+
+blockquote,
+q {
+	color: gray;
+
+	&::before {
+		content: open-quote;
+		font-size: 1.75em;
+		vertical-align: sub;
+	}
+
+	&::after {
+		content: close-quote;
+		font-size: 1.75em;
+		vertical-align: sub;
+	}
+}
+
+q {
+	&::before {
+		font-size: 1.25em;
+		vertical-align: text-bottom;
+		margin-right: 0.2em;
+	}
+
+	&::after {
+		font-size: 1.25em;
+		vertical-align: text-bottom;
+		margin-left: 0.2em;
+	}
+}
+
+ul,
+ol {
+	padding-left: $baseline;
+}
+
+dd + dt {
+	margin-top: $gutter-xs;
+}
+
+a,
+a:active,
+a:visited {
+	text-decoration: none;
+}
+
+b,
+strong,
+dt {
+	font-weight: 600;
+}
+
+i,
+em,
+blockquote,
+q {
+	font-style: italic;
+}
+
+small {
+	font-size: 0.67em;
+}
+
+code {
+	font-family: monospace;
+	color: gray;
+}
